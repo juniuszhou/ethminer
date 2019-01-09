@@ -211,6 +211,7 @@ void VM::interpretCases()
 			// Pre-homestead
 			if (!m_schedule->haveDelegateCall)
 				throwBadInstruction();
+			break;
 
 		CASE(CALL)
 		CASE(CALLCODE)

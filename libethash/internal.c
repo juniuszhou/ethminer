@@ -473,6 +473,7 @@ ethash_full_t ethash_full_new_internal(
 			ETHASH_CRITICAL("Could not recreate DAG file after finding existing DAG with unexpected size.");
 			goto fail_free_full;
 		}
+		break;
 		// fallthrough to the mismatch case here, DO NOT go through match
 	case ETHASH_IO_MEMO_MISMATCH:
 		if (!ethash_mmap(ret, f)) {
